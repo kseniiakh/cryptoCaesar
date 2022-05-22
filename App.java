@@ -23,7 +23,7 @@ public class App {
         }
         System.out.println(resultText1);
 
-        File file = new File("шифровка.txt");
+        File file = new File("encryption.txt");
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file))) {
             bufferedWriter.write(resultText1);
             System.out.println("Файл " + file + " сохранен");
@@ -47,7 +47,7 @@ public class App {
         System.out.println(resultText2);
 
         try {
-            File file1 = new File("расшифровка.txt");
+            File file1 = new File("decryption.txt");
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file1));
             bufferedWriter.write(resultText2);
             System.out.println("Файл " + file1 + " сохранен");
